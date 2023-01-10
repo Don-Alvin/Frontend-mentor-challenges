@@ -1,2 +1,2 @@
 # Frontend-mentor-challenges
-These is a series of frontend mentor challenges to continue practicing frontend technologies
+This is a series of frontend mentor challenges to continue practicing frontend technologies
