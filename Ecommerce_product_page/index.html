@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Ecommerce_product_page/assets/styles.css">
+    <link rel="stylesheet" href="../assets/styles.css">
     <script src="index.js" defer></script>
     <title>E-commerce Product Page</title>
 </head>
@@ -12,7 +12,15 @@
     <header class="header">
         <nav class="nav">
             <div class="sections">
-                <h1 class="logo">sneakers</h1>
+                <!-- hamburger-icon -->
+                <div class="hamburger-logo">
+                    <div class="hamburger-group-icon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <h1 class="logo">sneakers</h1>
+                </div>
                 <div class="page-sections">
                     <h4>Collections</h4>
                     <h4>Men</h4>
@@ -22,19 +30,49 @@
                 </div>
             </div>
             <div class="cart-profile">
-                <img src="../Ecommerce_product_page/assets/images/icon-cart.svg" alt="cart" class="cart">
-                <img src="../Ecommerce_product_page/assets/images/image-avatar.png" alt="profile" class="profile">
+                <div class="cart_group">
+                    <img src="../assets/images/icon-cart.svg" alt="cart" class="cart">
+                    <div class="cart_count">0</div>
+                </div>
+                <img src="../assets/images/image-avatar.png" alt="profile" class="profile">
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <nav class="mobile_menu">
+            <div class="slide_menu">
+                <img src="./assets/images/icon-close.svg" alt="icon-close" class="close_icon">
+
+                <!-- Menu Sections -->
+                <ul class menu_sections>
+                    <li>Collections</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+
             </div>
         </nav>
     </header>
     <section class="product">
         <div class="product_images">
-            <img src="../Ecommerce_product_page/assets/images/image-product-1.jpg" alt="main image" class="main-image">
+            <div class="previous_icon slide_button">
+                <img src="../assets/images/icon-previous.svg" alt="">
+            </div>
+            <div class="next_icon slide_button">
+                <img src="../assets/images/icon-next.svg" alt="">
+            </div>
+            <div class="image">
+                <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image">
+                <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
+                <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
+                <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
+            </div>
             <div class="other-images">
-                <img src="../Ecommerce_product_page/assets/images/image-product-1-thumbnail.jpg" alt="" class="other-image">
-                <img src="../Ecommerce_product_page/assets/images/image-product-2-thumbnail.jpg" alt="" class="other-image">
-                <img src="../Ecommerce_product_page/assets/images/image-product-3-thumbnail.jpg" alt="" class="other-image">
-                <img src="../Ecommerce_product_page/assets/images/image-product-4-thumbnail.jpg" alt="" class="other-image">
+                <img src="../assets/images/image-product-1-thumbnail.jpg" alt="" class="other-image">
+                <img src="../assets/images/image-product-2-thumbnail.jpg" alt="" class="other-image">
+                <img src="../assets/images/image-product-3-thumbnail.jpg" alt="" class="other-image">
+                <img src="../assets/images/image-product-4-thumbnail.jpg" alt="" class="other-image">
             </div>
         </div>
         <div class="product_info">
@@ -56,12 +94,16 @@
             </div>
             <div class="product_add-to-cart">
                 <div class="product_count">
-                    <button class="btn" id="decrease">-</button>
+                    <button class="btn" id="decrease">
+                        <img src="../assets/images/icon-minus.svg" alt="">
+                    </button>
                     <h6 class="count">0</h6>
-                    <button class="btn" id="increase">+</button>
+                    <button class="btn" id="increase">
+                        <img src="../assets/images/icon-plus.svg" alt="">
+                    </button>
                 </div>
                 <button class="add-to-cart">
-                    <img src="../Ecommerce_product_page/assets/images/icon-cart.svg" alt="">
+                    <img src="../assets/images/icon-cart-copy.svg" alt="">
                     <p>Add to cart</p>
                 </button>
             </div>
