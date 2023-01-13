@@ -1,3 +1,6 @@
+// Body
+const mainElement = document.querySelector(".product");
+
 // Sliding Menu
 const hamburgerElement = document.querySelector(".hamburger-group-icon");
 const menu = document.querySelector(".mobile_menu");
@@ -6,6 +9,7 @@ const closeElement = document.querySelector(".close_icon");
 // Images
 const mainImage = document.querySelector(".main-image");
 const otherImages = document.querySelectorAll(".other-image");
+const imageContainer = document.querySelector(".image");
 
 // Product details
 const productName = document.querySelector(".product_name");
@@ -28,7 +32,16 @@ const cartTotalPrice = document.querySelector(".total_price");
 const cartDelete = document.querySelector(".delete");
 const emptyCartElement = document.querySelector(".empty_cart");
 
+// Prev and Next Icons
+
+const prevIcon = document.querySelector(".previous_icon");
+const nextIcon = document.querySelector(".next_icon");
+
 // Functions and Logic
+
+const closeOvers = () => {
+	cart.classList.remove("show_cart");
+};
 
 // Mobile Menu
 const openMenu = () => {
@@ -85,11 +98,6 @@ const addToCart = () => {
 	cartTotalPrice.innerText = "$" + totalPrice + ".00";
 };
 
-let price = sellingPrice.innerText.substr(1, 3);
-let totalPrice = +price * count;
-console.log(price);
-console.log(totalPrice);
-
 // Show cart
 const showCart = () => {
 	cart.classList.toggle("show_cart");
@@ -102,7 +110,10 @@ const removeContents = () => {
 	cartCount.innerText = 0;
 };
 
+// Sliding Images
+
 // Event Listeners
+mainElement.addEventListener("click", closeOvers);
 hamburgerElement.addEventListener("click", openMenu);
 closeElement.addEventListener("click", closeMenu);
 menu.addEventListener("click", closeMenu);
@@ -111,3 +122,5 @@ increaseBtn.addEventListener("click", addQuantity);
 addToCartBtn.addEventListener("click", addToCart);
 cartIcon.addEventListener("click", showCart);
 cartDelete.addEventListener("click", removeContents);
+// nextIcon.addEventListener("click", nextImage);
+// prevIcon.addEventListener("click", prevImage);

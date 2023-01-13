@@ -9,134 +9,133 @@
     <title>E-commerce Product Page</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="sections">
-                <!-- hamburger-icon -->
-                <div class="hamburger-logo">
-                    <div class="hamburger-group-icon">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                    <h1 class="logo">sneakers</h1>
-                </div>
-                <div class="page-sections">
-                    <h4>Collections</h4>
-                    <h4>Men</h4>
-                    <h4>Women</h4>
-                    <h4>About</h4>
-                    <h4>Contact</h4>
-                </div>
-            </div>
-            <div class="cart-profile">
-                <div class="cart_group">
-                    <img src="../assets/images/icon-cart.svg" alt="cart" class="cart">
-                    <div class="cart_count" id="cart_count">0</div>
-                </div>
-                <img src="../assets/images/image-avatar.png" alt="profile" class="profile">
-            </div>
-        </nav>
-        <!-- Mobile Menu -->
-        <nav class="mobile_menu">
-            <div class="slide_menu">
-                <img src="./assets/images/icon-close.svg" alt="icon-close" class="close_icon">
-
-                <!-- Menu Sections -->
-                <ul class menu_sections>
-                    <li>Collections</li>
-                    <li>Men</li>
-                    <li>Women</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-
-            </div>
-        </nav>
-    </header>
-    <section class="product">
-        <div class="product_images">
-            <div class="previous_icon slide_button">
-                <img src="../assets/images/icon-previous.svg" alt="">
-            </div>
-            <div class="next_icon slide_button">
-                <img src="../assets/images/icon-next.svg" alt="">
-            </div>
-            <div class="image">
-                <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image">
-                <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
-                <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
-                <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
-            </div>
-            <div class="other-images">
-                <div class="overlay"></div>
-                <img src="../assets/images/image-product-1.jpg" alt="" class="other-image other-image-one">
-                <img src="../assets/images/image-product-2.jpg" alt="" class="other-image other-image-two">
-                <img src="../assets/images/image-product-3.jpg" alt="" class="other-image other-image-three">
-                <img src="../assets/images/image-product-4.jpg" alt="" class="other-image other-image-four">
-            </div>
-        </div>
-        <div class="product_info">
-            <div class="product_title">
-                <small class="product_company">SNEAKER COMPANY</small>
-                <h2 class="product_name">Fall Limited Edition Sneakers</h2>
-            </div>
-            <div class="product_description">
-                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-            </div>
-            <div class="product_price">
-                <div class="price">
-                    <h2 class="price_discount">$125.00</h2>
-                    <small class="price_original">$250.00</small>
-                </div>
-                <div class="discount">
-                    <small>50%</small>
-                </div>
-            </div>
-            <div class="product_add-to-cart">
-                <div class="product_count">
-                    <button class="btn" id="decrease">
-                        <img src="../assets/images/icon-minus.svg" alt="">
-                    </button>
-                    <h6 class="count" id="count">1</h6>
-                    <button class="btn" id="increase">
-                        <img src="../assets/images/icon-plus.svg" alt="">
-                    </button>
-                </div>
-                <button class="add-to-cart">
-                    <img src="../assets/images/icon-cart-copy.svg" alt="">
-                    <p>Add to cart</p>
-                </button>
-            </div>
-        </div>
-
-        <!-- CART -->
-        <div class="cart_container">
-            <header class="cart_header">
-                <small>Cart</small>
-            </header> 
-            <div class="cart_contents">
-                <div class="cart_contents_product">
-                    <img src="" alt="image thumbnail" class="cart_content-image">
-                    <div class="details">
-                        <h1 class="detail_title"></h1>
-                        <div class="detail_price">
-                            <p class="detail_price_quantity">
-                                <span class="single_price"></span> 
-                                <img src="../assets/images/icon-close.svg" alt="" class="times">
-                                <span class="detail_quantity"></span>
-                            </p>
-                            <p class="total_price"></p>
+    <main class="main">
+        <header class="header">
+            <nav class="nav">
+                <div class="sections">
+                    <!-- hamburger-icon -->
+                    <div class="hamburger-logo">
+                        <div class="hamburger-group-icon">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
                         </div>
+                        <h1 class="logo">sneakers</h1>
                     </div>
-                    <img src="../assets/images/icon-delete.svg" alt="" class="delete">
+                    <div class="page-sections">
+                        <h4>Collections</h4>
+                        <h4>Men</h4>
+                        <h4>Women</h4>
+                        <h4>About</h4>
+                        <h4>Contact</h4>
+                    </div>
                 </div>
-                <button class="checkout_btn">Checkout</button>
+                <div class="cart-profile">
+                    <div class="cart_group">
+                        <img src="../assets/images/icon-cart.svg" alt="cart" class="cart">
+                        <div class="cart_count" id="cart_count">0</div>
+                    </div>
+                    <img src="../assets/images/image-avatar.png" alt="profile" class="profile">
+                </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <nav class="mobile_menu">
+                <div class="slide_menu">
+                    <img src="./assets/images/icon-close.svg" alt="icon-close" class="close_icon">
+                    <!-- Menu Sections -->
+                    <ul class menu_sections>
+                        <li>Collections</li>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="product">
+            <div class="product_images">
+                <div class="previous_icon slide_button">
+                    <img src="../assets/images/icon-previous.svg" alt="">
+                </div>
+                <div class="next_icon slide_button">
+                    <img src="../assets/images/icon-next.svg" alt="">
+                </div>
+                <div class="image">
+                    <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image">
+                    <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
+                    <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
+                    <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
+                </div>
+                <div class="other-images">
+                    <div class="overlay"></div>
+                    <img src="../assets/images/image-product-1.jpg" alt="" class="other-image other-image-one">
+                    <img src="../assets/images/image-product-2.jpg" alt="" class="other-image other-image-two">
+                    <img src="../assets/images/image-product-3.jpg" alt="" class="other-image other-image-three">
+                    <img src="../assets/images/image-product-4.jpg" alt="" class="other-image other-image-four">
+                </div>
             </div>
-            <div class="empty_cart">
-                <h4>Cart is empty</h4>
+            <div class="product_info">
+                <div class="product_title">
+                    <small class="product_company">SNEAKER COMPANY</small>
+                    <h2 class="product_name">Fall Limited Edition Sneakers</h2>
+                </div>
+                <div class="product_description">
+                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                </div>
+                <div class="product_price">
+                    <div class="price">
+                        <h2 class="price_discount">$125.00</h2>
+                        <small class="price_original">$250.00</small>
+                    </div>
+                    <div class="discount">
+                        <small>50%</small>
+                    </div>
+                </div>
+                <div class="product_add-to-cart">
+                    <div class="product_count">
+                        <button class="btn" id="decrease">
+                            <img src="../assets/images/icon-minus.svg" alt="">
+                        </button>
+                        <h6 class="count" id="count">1</h6>
+                        <button class="btn" id="increase">
+                            <img src="../assets/images/icon-plus.svg" alt="">
+                        </button>
+                    </div>
+                    <button class="add-to-cart">
+                        <img src="../assets/images/icon-cart-copy.svg" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
             </div>
-        </div>
-    </section>
+            <!-- CART -->
+            <div class="cart_container">
+                <header class="cart_header">
+                    <small>Cart</small>
+                </header>
+                <div class="cart_contents">
+                    <div class="cart_contents_product">
+                        <img src="" alt="image thumbnail" class="cart_content-image">
+                        <div class="details">
+                            <h1 class="detail_title"></h1>
+                            <div class="detail_price">
+                                <p class="detail_price_quantity">
+                                    <span class="single_price"></span>
+                                    <img src="../assets/images/icon-close.svg" alt="" class="times">
+                                    <span class="detail_quantity"></span>
+                                </p>
+                                <p class="total_price"></p>
+                            </div>
+                        </div>
+                        <img src="../assets/images/icon-delete.svg" alt="" class="delete">
+                    </div>
+                    <button class="checkout_btn">Checkout</button>
+                </div>
+                <div class="empty_cart">
+                    <h4>Cart is empty</h4>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
