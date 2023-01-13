@@ -32,7 +32,7 @@
             <div class="cart-profile">
                 <div class="cart_group">
                     <img src="../assets/images/icon-cart.svg" alt="cart" class="cart">
-                    <div class="cart_count">0</div>
+                    <div class="cart_count" id="cart_count">0</div>
                 </div>
                 <img src="../assets/images/image-avatar.png" alt="profile" class="profile">
             </div>
@@ -98,7 +98,7 @@
                     <button class="btn" id="decrease">
                         <img src="../assets/images/icon-minus.svg" alt="">
                     </button>
-                    <h6 class="count">0</h6>
+                    <h6 class="count" id="count">0</h6>
                     <button class="btn" id="increase">
                         <img src="../assets/images/icon-plus.svg" alt="">
                     </button>
@@ -107,6 +107,31 @@
                     <img src="../assets/images/icon-cart-copy.svg" alt="">
                     <p>Add to cart</p>
                 </button>
+            </div>
+        </div>
+
+        <!-- CART -->
+        <div class="cart_container">
+            <header class="cart_header">
+                <small>Cart</small>
+            </header> 
+            <div class="cart_contents">
+                <div class="cart_contents_product">
+                    <img src="../assets/images/image-product-1-thumbnail.jpg" alt="image thumbnail" class="cart_content-image">
+                    <div class="details">
+                        <h1 class="detail_title">Fall Limited Edition Sneakers</h1>
+                        <div class="detail_price">
+                            <p class="detail_price_quantity">
+                                <span class="single_price">$125.00</span> 
+                                <img src="../assets/images/icon-close.svg" alt="" class="times">
+                                <span class="deatil_quantity">3</span>
+                            </p>
+                            <p class="total_price">$375.00</p>
+                        </div>
+                    </div>
+                    <img src="../assets/images/icon-delete.svg" alt="" class="delete">
+                </div>
+                <button class="checkout_btn">Checkout</button>
             </div>
         </div>
     </section>
