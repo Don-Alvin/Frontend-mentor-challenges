@@ -408,6 +408,11 @@ body {
 	padding: 20px;
 	display: grid;
 	gap: 30px;
+	display: none;
+}
+
+.show_contents {
+	display: grid;
 }
 
 .cart_contents_product {
@@ -434,7 +439,7 @@ body {
 }
 
 .single_price,
-.deatil_quantity {
+.detail_quantity {
 	color: var(--very-dark-blue);
 	font-size: 13px;
 }
@@ -458,6 +463,23 @@ body {
 
 	font-size: 14px;
 	font-weight: 700;
+}
+
+.empty_cart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.hide_empty_cart {
+	display: none;
+}
+
+.empty_cart h4 {
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--very-dark-blue);
 }
 
 /* MEDIA SCREENS */
