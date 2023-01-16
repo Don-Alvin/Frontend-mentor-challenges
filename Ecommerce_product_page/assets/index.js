@@ -112,6 +112,42 @@ const removeContents = () => {
 
 // Sliding Images
 
+const nextImage = () => {
+	let imageIndex = getCurrentImageIndex();
+	imageIndex++;
+	if (imageIndex > 4) {
+		imageIndex = 1;
+	}
+
+	setMainImage(imageIndex);
+};
+const prevImage = () => {
+	let imageIndex = getCurrentImageIndex();
+	imageIndex--;
+	if (imageIndex < 1) {
+		imageIndex = 4;
+	}
+
+	setMainImage(imageIndex);
+};
+
+const getCurrentImageIndex = () => {
+	const imageIndex = +mainImage.src
+		.split("\\")
+		.pop()
+		.split("/")
+		.pop()
+		.replace(".jpg", "")
+		.replace("image-product-", "");
+	return imageIndex;
+};
+
+const setMainImage = (imageIndex) => {
+	mainImage.src = `../assets/images/image-product-${imageIndex}.jpg`;
+};
+
+console.log(mainImage.src);
+
 // Event Listeners
 mainElement.addEventListener("click", closeOvers);
 hamburgerElement.addEventListener("click", openMenu);
@@ -122,5 +158,5 @@ increaseBtn.addEventListener("click", addQuantity);
 addToCartBtn.addEventListener("click", addToCart);
 cartIcon.addEventListener("click", showCart);
 cartDelete.addEventListener("click", removeContents);
-// nextIcon.addEventListener("click", nextImage);
-// prevIcon.addEventListener("click", prevImage);
+nextIcon.addEventListener("click", nextImage);
+prevIcon.addEventListener("click", prevImage);
