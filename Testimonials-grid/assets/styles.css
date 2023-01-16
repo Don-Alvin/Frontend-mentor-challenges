@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Barlow Semi Condensed", sans-serif;
+	font-size: 13px;
+}
+
+/* VARIABLES */
+
+/* COLORS */
+
+:root {
+	--violet-color: hsl(263, 55%, 52%);
+	--dark-grayish-blue: hsl(217, 19%, 35%);
+	--dark-blackish-blue: hsl(219, 29%, 14%);
+	--white-color: hsl(0, 0%, 100%);
+	--light-gray: hsl(0, 0%, 81%);
+	--light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+	background-color: var(--light-grayish-blue);
+}
+
+.grid {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.grid_container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 25px;
+
+	width: 70%;
+}
+
+.card {
+	padding: 20px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.one {
+	grid-column: span 2;
+	background-color: var(--violet-color);
+}
+
+.two {
+	grid-column: span 1;
+	background-color: var(--dark-grayish-blue);
+}
+
+.three {
+	grid-column: span 1;
+	grid-row: span 2;
+	background-color: var(--white-color);
+}
+
+.four {
+	grid-column: span 1;
+	background-color: var(--white-color);
+}
+
+.five {
+	grid-column: span 2;
+	background-color: var(--dark-blackish-blue);
+}
+
+.profile {
+	display: flex;
+	gap: 15px;
+}
+
+.profile_image {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid var(--light-grayish-blue);
+}
+
+.five .profile_image {
+	border-color: var(--violet-color);
+}
+
+.profile_content {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.name {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--white-color);
+}
+
+.three .name,
+.four .name {
+	color: var(--dark-grayish-blue);
+}
+
+.role {
+	font-size: 10px;
+	color: var(--light-gray);
+	font-weight: 500;
+}
+
+.testimonial {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.preview {
+	color: var(--white-color);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.preview-three,
+.preview-four {
+	color: var(--dark-grayish-blue);
+}
+
+.full_testimonial {
+	color: var(--light-gray);
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.full_testimonial-three,
+.full_testimonial-four {
+	color: var(--dark-grayish-blue);
+}
+
+@media screen and (max-width: 375px) {
+	.grid_container {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+}
