@@ -146,8 +146,6 @@ const setMainImage = (imageIndex) => {
 	mainImage.src = `../assets/images/image-product-${imageIndex}.jpg`;
 };
 
-console.log(mainImage.src);
-
 // Event Listeners
 mainElement.addEventListener("click", closeOvers);
 hamburgerElement.addEventListener("click", openMenu);
