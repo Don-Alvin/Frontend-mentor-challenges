@@ -152,6 +152,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		width: 90%;
+		margin-bottom: 50px;
 	}
 }
 
@@ -159,5 +160,6 @@ body {
 	.grid_container {
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: 50px;
 	}
 }
