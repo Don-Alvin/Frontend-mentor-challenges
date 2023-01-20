@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+body * {
+	font-family: "Inter", sans-serif;
+}
+
+html {
+	font-size: 15px;
+}
+
+/* Mobile  
+    375px
+*/
+
+/* Desktop
+    1440px
+*/
+
+/* VARIABLES */
+
+:root {
+	/* Primary Colors */
+	--soft-orange: hsl(35, 77%, 62);
+	--soft-red: hsl(5, 85%, 63%);
+
+	/* Neutral */
+	--off-white: hsl(36, 100%, 99%);
+	--grayish-blue: hsl(233, 85%, 79%);
+	--dark-grayish-blue: hsl(236, 13%, 42%);
+	--very-dark-blue: hsl(240, 100%, 5%);
+}
