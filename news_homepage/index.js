@@ -1,15 +1,23 @@
 const openMenuElement = document.querySelector(".menu_icon");
 const closeMenuElement = document.querySelector(".close_icon");
 const slidingMenu = document.querySelector(".sliding_menu");
+const scrollUpIcon = document.querySelector(".scroll_up-icon");
 
 const openMenu = () => {
-	slidingMenu.classList.add("show_sliding_menu");
+	slidingMenu.classList.toggle("show_sliding_menu");
 };
 
 const closeMenu = () => {
 	slidingMenu.classList.remove("show_sliding_menu");
 };
 
+const showScrollIcon = () => {
+	if ((scrollY = 700)) {
+		scrollUpIcon.classList.add("show_scroll_icon");
+	}
+};
+
 openMenuElement.addEventListener("click", openMenu);
 closeMenuElement.addEventListener("click", closeMenu);
 slidingMenu.addEventListener("click", closeMenu);
+window.addEventListener("scroll", showScrollIcon);
