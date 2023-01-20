@@ -19,12 +19,7 @@ const showScrollIcon = () => {
 	}
 };
 
-// const scrollUp = () => {
-// 	this.scrollY = 0;
-// };
-
 openMenuElement.addEventListener("click", openMenu);
 closeMenuElement.addEventListener("click", closeMenu);
 slidingMenu.addEventListener("click", closeMenu);
 window.addEventListener("scroll", showScrollIcon);
-// scrollUpIcon.addEventListener("click", scrollUp);
