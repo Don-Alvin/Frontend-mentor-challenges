@@ -12,8 +12,10 @@ const closeMenu = () => {
 };
 
 const showScrollIcon = () => {
-	if ((scrollY = 700)) {
+	if (scrollY >= 350) {
 		scrollUpIcon.classList.add("show_scroll_icon");
+	} else {
+		scrollUpIcon.classList.remove("show_scroll_icon");
 	}
 };
 

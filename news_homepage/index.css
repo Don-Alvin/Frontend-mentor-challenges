@@ -6,6 +6,7 @@ body * {
 
 html {
 	font-size: 15px;
+	scroll-behavior: smooth;
 }
 
 /* Mobile  
@@ -259,6 +260,7 @@ html {
 	position: fixed;
 	bottom: 60px;
 	right: 15px;
+	text-decoration: none;
 
 	display: none;
 }
