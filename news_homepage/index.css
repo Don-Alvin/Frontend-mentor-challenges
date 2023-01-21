@@ -54,6 +54,10 @@ html {
 	height: 30px;
 }
 
+.section_links {
+	display: none;
+}
+
 .sliding_menu {
 	background-color: rgba(0, 0, 0, 0.26);
 	position: fixed;
@@ -110,7 +114,7 @@ html {
 
 .main {
 	position: relative;
-	top: 92px;
+	top: 100px;
 	left: 0;
 	right: 0;
 	padding: 0 15px 0 15px;
@@ -125,12 +129,21 @@ html {
 	margin-bottom: 50px;
 }
 
-.hero_image img {
-	width: 100%;
+.hero_image {
+	background-image: url(images/image-web-3-mobile.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 300px;
 }
 
 .hero_content {
 	display: grid;
+	gap: 20px;
+}
+
+.hero_content_text {
+	display: flex;
+	flex-direction: column;
 	gap: 20px;
 }
 
@@ -144,6 +157,7 @@ html {
 	color: var(--dark-grayish-blue);
 	line-height: 1.6;
 	font-size: 16px;
+	width: 100%;
 }
 
 .btn {
@@ -205,8 +219,9 @@ html {
 }
 
 .other {
-	display: grid;
-	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
 .other_news {
@@ -216,10 +231,13 @@ html {
 
 .other_image {
 	width: 100px;
+	height: 100px;
 }
 
 .content {
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .number {
@@ -282,4 +300,95 @@ i {
 .footer_text a {
 	text-decoration: none;
 	color: var(--soft-orange);
+}
+
+/* Media Screens */
+
+/* Large Screens */
+
+@media screen and (min-width: 768px) {
+	.header {
+		padding: 20px 50px 20px 100px;
+	}
+
+	.sliding_menu {
+		display: none;
+	}
+
+	.menu_icon {
+		display: none;
+	}
+
+	.section_links {
+		display: flex;
+	}
+
+	.links_list {
+		display: flex;
+		gap: 20px;
+	}
+
+	.link a {
+		text-decoration: none;
+		color: var(--dark-grayish-blue);
+	}
+
+	.hero_image {
+		background-image: url(images/image-web-3-desktop.jpg);
+	}
+
+	.main {
+		padding: 50px 50px 30px 100px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		top: 60px;
+		gap: 20px;
+	}
+
+	.hero {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+
+	.hero_image {
+		height: 300px;
+	}
+
+	.hero_content {
+		display: flex;
+		gap: 30px;
+	}
+
+	.hero_content_text {
+		display: grid;
+		width: 400px;
+		gap: 20px;
+		flex-basis: 50%;
+	}
+
+	.new {
+		grid-column: span 1;
+		grid-row: span 2;
+	}
+
+	.other {
+		grid-column: span 3;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.other_news {
+		flex-basis: 33%;
+	}
+
+	.other_image {
+		width: 200px;
+		height: 150px;
+	}
+
+	.content {
+		height: 150px;
+		justify-content: space-evenly;
+	}
 }
