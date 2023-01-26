@@ -24,3 +24,33 @@ html {
 }
 
 /* STYLING */
+
+.header {
+	background-color: var(--soft-red);
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.balance {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.balance_title {
+	color: #fff;
+}
+
+.balance_figures {
+	color: #fff;
+	font-weight: 600;
+	font-size: 24px;
+}
