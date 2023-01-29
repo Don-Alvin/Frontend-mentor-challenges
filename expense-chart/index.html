@@ -24,7 +24,23 @@
     <!-- Main -->
 
     <main class="main">
-
+        <h2 class="main_heading">Spending - Last 7 days</h2>
+        <div class="bar_chart">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="divider"></div>
+        <div class="main_footer">
+            <div class="month">
+                <h5 class="month_heading">Total this month</h5>
+                <h5 class="month_figures">$478.33</h5>
+            </div>
+            <div class="last_month">
+                <span class="last_month-percentage">+2.4%</span>
+                <span class="last_month-text">from last month</span>
+            </div>
+        </div>
     </main>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
