@@ -385,7 +385,7 @@ body {
 	position: fixed;
 	top: 50px;
 	right: 70px;
-	z-index: 100;
+	z-index: 1000;
 	display: none;
 }
 
@@ -482,6 +482,25 @@ body {
 	color: var(--very-dark-blue);
 }
 
+.backdrop {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.473);
+	z-index: 200;
+	display: none;
+}
+
+.show_backdrop {
+	display: block;
+}
+
+.delete {
+	cursor: pointer;
+}
+
 /* MEDIA SCREENS */
 
 @media screen and (max-width: 375px) {
@@ -540,10 +559,6 @@ body {
 		width: 100%;
 		height: 300px;
 	}
-
-	/* .main_image {
-		display: block;
-	} */
 
 	.main-image {
 		width: 100%;

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles.css">
-    <script src="/assets/index.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="./assets/index.js" defer></script>
     <title>E-commerce Product Page</title>
 </head>
 <body>
@@ -32,10 +32,10 @@
                 </div>
                 <div class="cart-profile">
                     <div class="cart_group">
-                        <img src="../assets/images/icon-cart.svg" alt="cart" class="cart">
+                        <img src="./assets/images/icon-cart.svg" alt="cart" class="cart">
                         <div class="cart_count" id="cart_count">0</div>
                     </div>
-                    <img src="../assets/images/image-avatar.png" alt="profile" class="profile">
+                    <img src="./assets/images/image-avatar.png" alt="profile" class="profile">
                 </div>
             </nav>
             <!-- Mobile Menu -->
@@ -56,23 +56,23 @@
         <section class="product">
             <div class="product_images">
                 <div class="previous_icon slide_button">
-                    <img src="../assets/images/icon-previous.svg" alt="">
+                    <img src="./assets/images/icon-previous.svg" alt="">
                 </div>
                 <div class="next_icon slide_button">
-                    <img src="../assets/images/icon-next.svg" alt="">
+                    <img src="./assets/images/icon-next.svg" alt="">
                 </div>
                 <div class="image">
-                    <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image">
-                    <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
-                    <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
-                    <img src="../assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
+                    <img src="./assets/images/image-product-1.jpg" alt="main image" class="main-image">
+                    <img src="./assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
+                    <img src="./assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
+                    <img src="./assets/images/image-product-1.jpg" alt="main image" class="main-image main_image">
                 </div>
                 <div class="other-images">
                     <div class="overlay"></div>
-                    <img src="../assets/images/image-product-1.jpg" alt="" class="other-image other-image-one">
-                    <img src="../assets/images/image-product-2.jpg" alt="" class="other-image other-image-two">
-                    <img src="../assets/images/image-product-3.jpg" alt="" class="other-image other-image-three">
-                    <img src="../assets/images/image-product-4.jpg" alt="" class="other-image other-image-four">
+                    <img src="./assets/images/image-product-1.jpg" alt="" class="other-image other-image-one">
+                    <img src="./assets/images/image-product-2.jpg" alt="" class="other-image other-image-two">
+                    <img src="./assets/images/image-product-3.jpg" alt="" class="other-image other-image-three">
+                    <img src="./assets/images/image-product-4.jpg" alt="" class="other-image other-image-four">
                 </div>
             </div>
             <div class="product_info">
@@ -95,47 +95,48 @@
                 <div class="product_add-to-cart">
                     <div class="product_count">
                         <button class="btn" id="decrease">
-                            <img src="../assets/images/icon-minus.svg" alt="">
+                            <img src="./assets/images/icon-minus.svg" alt="">
                         </button>
                         <h6 class="count" id="count">1</h6>
                         <button class="btn" id="increase">
-                            <img src="../assets/images/icon-plus.svg" alt="">
+                            <img src="./assets/images/icon-plus.svg" alt="">
                         </button>
                     </div>
                     <button class="add-to-cart">
-                        <img src="../assets/images/icon-cart-copy.svg" alt="">
+                        <img src="./assets/images/icon-cart-copy.svg" alt="">
                         <p>Add to cart</p>
                     </button>
                 </div>
             </div>
             <!-- CART -->
-            <div class="cart_container">
-                <header class="cart_header">
-                    <small>Cart</small>
-                </header>
-                <div class="cart_contents">
-                    <div class="cart_contents_product">
-                        <img src="" alt="image thumbnail" class="cart_content-image">
-                        <div class="details">
-                            <h1 class="detail_title"></h1>
-                            <div class="detail_price">
-                                <p class="detail_price_quantity">
-                                    <span class="single_price"></span>
-                                    <img src="../assets/images/icon-close.svg" alt="" class="times">
-                                    <span class="detail_quantity"></span>
-                                </p>
-                                <p class="total_price"></p>
+                <div class="cart_container">
+                    <header class="cart_header">
+                        <small>Cart</small>
+                    </header>
+                    <div class="cart_contents">
+                        <div class="cart_contents_product">
+                            <img src="" alt="image thumbnail" class="cart_content-image">
+                            <div class="details">
+                                <h1 class="detail_title"></h1>
+                                <div class="detail_price">
+                                    <p class="detail_price_quantity">
+                                        <span class="single_price"></span>
+                                        <img src="./assets/images/icon-close.svg" alt="" class="times">
+                                        <span class="detail_quantity"></span>
+                                    </p>
+                                    <p class="total_price"></p>
+                                </div>
                             </div>
+                            <img src="./assets/images/icon-delete.svg" alt="" class="delete">
                         </div>
-                        <img src="../assets/images/icon-delete.svg" alt="" class="delete">
+                        <button class="checkout_btn">Checkout</button>
                     </div>
-                    <button class="checkout_btn">Checkout</button>
+                    <div class="empty_cart">
+                        <h4>Cart is empty</h4>
+                    </div>
                 </div>
-                <div class="empty_cart">
-                    <h4>Cart is empty</h4>
-                </div>
-            </div>
         </section>
+        <div class="backdrop"></div>
     </main>
 </body>
 </html>

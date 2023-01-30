@@ -1,5 +1,5 @@
-// Body
-const mainElement = document.querySelector(".product");
+// Backdrop
+const backdrop = document.querySelector(".backdrop");
 
 // Sliding Menu
 const hamburgerElement = document.querySelector(".hamburger-group-icon");
@@ -41,6 +41,7 @@ const nextIcon = document.querySelector(".next_icon");
 
 const closeOvers = () => {
 	cart.classList.remove("show_cart");
+	backdrop.classList.remove("show_backdrop");
 };
 
 // Mobile Menu
@@ -81,9 +82,9 @@ const addQuantity = () => {
 };
 
 // Add to cart
-let items = 1;
+// let items = 0;
 const addToCart = () => {
-	cartCount.innerText = items;
+	cartCount.innerText = count;
 	//Cart Container
 
 	emptyCartElement.classList.add("hide_empty_cart");
@@ -101,6 +102,7 @@ const addToCart = () => {
 // Show cart
 const showCart = () => {
 	cart.classList.toggle("show_cart");
+	backdrop.classList.add("show_backdrop");
 };
 
 // Remove Contents
@@ -147,7 +149,7 @@ const setMainImage = (imageIndex) => {
 };
 
 // Event Listeners
-mainElement.addEventListener("click", closeOvers);
+backdrop.addEventListener("click", closeOvers);
 hamburgerElement.addEventListener("click", openMenu);
 closeElement.addEventListener("click", closeMenu);
 menu.addEventListener("click", closeMenu);
