@@ -257,7 +257,7 @@ html {
 	flex-direction: column;
 	align-items: center;
 	gap: 30px;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .industry_intro {
@@ -304,8 +304,175 @@ html {
 .card_text {
 	text-align: center;
 	color: var(--text-color);
+	font-size: 1.6rem;
 }
 
 .card_rating i {
 	color: orange;
+}
+
+.partners {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.partner_companies {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.partner_image {
+	width: 70px;
+	height: 35px;
+}
+
+.subscribe {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	width: 75%;
+	background: linear-gradient(to right, rgb(1, 71, 99), purple);
+}
+
+.subscribe .left p {
+	color: white;
+	text-transform: capitalize;
+	font-size: 1.4rem;
+}
+
+.subscribe .right {
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+.subscribe form {
+	display: flex;
+	border: none;
+}
+
+.subscribe form input {
+	border: none;
+	border-radius: 4px 0 0 4px;
+	padding-left: 10px;
+	outline: none;
+}
+
+.subscribe form button {
+	border: none;
+	border-radius: 0 4px 4px 0;
+}
+
+.pricing {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pricing_card {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.pricing_card h5 {
+	color: var(--blue-heading);
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.pricing_card p {
+	color: var(--text-color);
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.pricing_intro {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.pricing_header {
+	color: var(--blue-heading);
+	font-size: 2.4rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.pricing_text {
+	color: var(--text-color);
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.pricing_cards {
+	display: flex;
+	gap: 1px;
+	margin-top: 30px;
+}
+
+.pricing_card {
+	border: 1px solid var(--blue-color);
+	padding: 30px 20px;
+	border-radius: 8px;
+}
+
+.price_details {
+	display: flex;
+	gap: 10px;
+	color: var(--blue-color);
+	justify-content: center;
+	align-items: center;
+}
+
+.price_left {
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+.price_right {
+	display: grid;
+}
+
+.price_right span {
+	font-size: 1.2rem;
+}
+
+.card_details {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.card_detail {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.card_detail i {
+	color: green;
+	font-size: 2.4rem;
+}
+
+.card_detail:nth-child(4) i {
+	color: gray;
+}
+
+.card_detail:nth-child(5) i {
+	color: gray;
+}
+
+.pricing_card a {
+	text-align: center;
+	border-radius: 5px;
+	font-size: 1.4rem;
 }
