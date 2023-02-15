@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
     <title>Landing Page</title>
 </head>
 <body>
-    <header class="header" id="header">
+    <header class="header">
         <nav class="nav">
             <div class="nav_left">
                 <h1 class="logo">BrandName</h1>
                 <ul class="page_links">
-                    <li class="links"><a href="#header">Home</a></li>
+                    <li class="links"><a href="#">Home</a></li>
                     <li class="links"><a href="#product">Product</a></li>
                     <li class="links"><a href="#pricing">Pricing</a></li>
                     <li class="links"><a href="#contact">Contact</a></li>
@@ -27,7 +28,7 @@
             </div>
         </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="overlay">
             <div class="hero_content">
                 <h3 class="hero_heading">we ensure a best <br> insurance service</h3>
@@ -138,8 +139,8 @@
 
             <div class="right">
                 <form >
-                    <input type="email" name="email" id="email" placeholder="Your Email">
-                    <button class="btn focus">Subscribe</button>
+                    <input type="email" name="email" id="email" placeholder="Your Email" />
+                    <button class="btn focus">Subscribe</button
                 </form>
             </div>
         </div>
@@ -255,5 +256,130 @@
             </div>
         </div>
     </section>
+
+    <section class="contact" id="contact">
+        <div class="contact_main">
+            <div class="branches">
+                <div class="branches_text">
+                    <h5>we have branches all<br>over the world</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima itaque voluptatum numquam nam ipsum laboriosam placeat. Numquam, ipsam ad corporis nam dolores maxime ea repellat!</p>
+                </div>
+                <img src="images/pingwig.png" alt="">
+            </div>
+            <div class="form">
+                <img src="images/contact.png" alt="">
+                <div class="form_section">
+                    <h5>Book Appointment</h5>
+                    <form>
+                        <div class="form_item">
+                                <label for="name">Name *</label>
+                                <input type="'text" id="name" name="fullname" placeholder="Full Name *" required />
+                        </div>
+                        <div class="form_item">
+                                <label for="email">Email address *</label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com *" required />
+                        </div>
+                        <div class="form_item">
+                                <label for="name">Department *</label>
+                                <select id="name">
+                                    <option class='option' >Please select</option>
+                                    <option class='option' >English</option>
+                                    <option class='option' >Physics</option>
+                                    <option class='option' >Chemistry</option>
+                                    <option class='option' >Mathematics</option>
+                                </select>
+                        </div>
+                        <div class="form_item">
+                                <label for="time">Time *</label>
+                                <select id="time">
+                                    <option class='option'>4:00 Available</option>
+                                    <option class='option' >4:00 Available</option>
+                                    <option class='option' >4:00 Available</option>
+                                    <option class='option' >4:00 Available</option>
+                                    <option class='option' >4:00 Available</option>
+                                </select>
+                        </div>
+                        <button class="btn focus"> Book Appointment</button>
+            
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact_footer">
+            <div class="text">
+                <h6>consulting agency for your bussiness</h6>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <a href="/" class="btn focus">Contact Us</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="grid">
+            <div class="grid_container">
+                <div class="grid-item">
+                    <h6>Company Info</h6>
+                    <ul>
+                        <li><a href="/">About Us</a></li>
+                        <li><a href="/">Carrier</a></li>
+                        <li><a href="/">We are hiring</a></li>
+                        <li><a href="/">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h6>Legal</h6>
+                    <ul>
+                        <li><a href="/">About Us</a></li>
+                        <li><a href="/">Carrier</a></li>
+                        <li><a href="/">We are hiring</a></li>
+                        <li><a href="/">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h6>Features</h6>
+                    <ul>
+                        <li><a href="/">Business Marketing</a></li>
+                        <li><a href="/">User Analytic</a></li>
+                        <li><a href="/">Live Chat</a></li>
+                        <li><a href="/">Unlimited Support</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h6>Resources</h6>
+                    <ul>
+                        <li><a href="/">IOS & Android</a></li>
+                        <li><a href="/">Watch a Demo</a></li>
+                        <li><a href="/">Customers</a></li>
+                        <li><a href="/">API</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item contact_info">
+                    <h6>Get In Touch</h6>
+                    <ul>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p>(480) 555-0103</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-location-dot"></i>
+                            <p>417 Washington Ave.</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>debra.holt@example.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <p>made with love bt figmaland all right reserved</p>
+            <div class="social_icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
